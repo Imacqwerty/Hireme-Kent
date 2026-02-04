@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /*Para sa smooth na scrolling pag pinindot ang about me*/
+}
+
+body {
+  background-color: #5e270b;
+  /* padding: 0 .5rem 0 .5rem; */
+  padding-top: 80px;
+  /* padding: 0rem 10rem 0rem 10rem; */
+}
+
+.navbar {
+  color: white;
+  background-color: #5e270b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem 2rem 2rem;
+  font-weight: bold;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.links {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 4rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  transition: all 0.2s ease-in-out;
+}
+
+hr {
+  padding: 2rem;
+  position: relative;
+}
+
+/* Pangpasmooth ng transition ng changing ng images */
+#heroImage {
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  object-fit: contain; /* Keeps image proportions */
+}
+
+/* START OF HERO 1 CONTAINER */
+.hero1container {
+  height: 70vh;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+/* END OF HERO 1 CONTAINER */
+
+/* START OF HERO 2 CONTAINTER */
+
+.hero2container {
+  background-color: #4c2a19;
+  display: flex;
+  min-height: calc(120vh - 60px);
+  margin-top: 0rem;
+}
+
+.side {
+  background-color: #4c2a19;
+  width: 20%;
+  display: flex;
+  padding: 1rem;
+  position: relative; /*prevents the hero 1 image from overflowing to the hero section2*/
+  border-radius: 1rem;
+  flex-direction: column;
+}
+
+.center {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative; /*prevents the hero 1 image from overflowing to the hero section2*/
+}
+
+.hero1 {
+  background-image: url("hero1.jpg");
+  background-color: bisque;
+  min-height: 50vh; /* Changed from height to min-height */
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  /* line-height: 5vh; Same as height */
+  display: grid;
+  place-items: center;
+}
+
+.hero2 {
+  background-image: url("hero2.jpg");
+  background-color: #775646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* Changed from height to min-height */
+  padding: 2rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.leftpart2 {
+  background-color: #e0d8d6;
+}
+
+.rightpart2 {
+  color: white;
+}
+
+/* END OF HERO 2 CONTAINTER */
+
+/* START OF HERO 3 CONTAINTER */
+.hero3container {
+  color: white;
+  background-image: url("elegant.jpg");
+  background-color: #deaf84;
+  padding: 5rem;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.hero3container h1 {
+  text-align: center;
+}
+.hero3container p {
+  text-align: center;
+}
+
+/* START OF SHOWCASE */
+
+.divscontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+video {
+  border-radius: 2rem;
+  margin-right: 2rem;
+}
+
+.heroshowcase {
+  margin-top: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.heroshowcase h1 {
+  text-align: center;
+  color: white;
+}
+
+#ownerimage {
+  width: 20vw;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.photo img {
+  border-radius: 50rem;
+}
+
+.work {
+  display: grid;
+  place-items: center;
+}
+
+/* END OF SHOWCASE */
+
+/* END OF HERO 1 CONTAINER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem;
+  background-color: bisque;
+
+  /* font-weight: bold; */
+}
+
+#KentQuilao:hover {
+  color: white;
+}
